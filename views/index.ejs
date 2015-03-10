@@ -1,0 +1,32 @@
+﻿<!doctype HTML>
+<html>
+	<title>Welcome To Express  App</title>
+	<head>
+	<link rel='stylesheet' type='text/css' href='bootsrap/css/bootstrap.css' />	
+	</head>
+	<body>
+		<div class='container'>
+			<div class='row'>										
+				<h1><%= title %></h1>
+			
+				<ul>
+					<% for(var i=0;i<items.length;i++){ %>
+						<li><%= items[i].desc %></li>
+					<%}%>
+				</ul>				
+			</div>
+			<div class='row'>
+				<div class='col-sm-12'>
+					<form action='/add' method='post'>
+					<input class='form-control' type='text' name='newItem'/>
+					<input class='btn btn-primary' type='submit'/>
+					</form>	
+				</div>
+			</div>
+		</div>	
+
+		<!--JS script-->
+		<script type='text/javascript' src='jquerry/jquery.js'></script>
+		<script type='text/javascript' src='bootsrap/js/bootstrap.js'></script>
+	</body>
+</html>

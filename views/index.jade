@@ -1,0 +1,11 @@
+﻿
+extends layout
+
+block content
+  div.container
+   div.alert.alert-info
+    p welcome to Express Jade Templating
+   p Users
+   #users
+    for user in users
+      include user
