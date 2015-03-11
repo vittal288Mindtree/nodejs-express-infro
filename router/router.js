@@ -1,4 +1,6 @@
 ﻿var express = require('express');
+var app = express();
+var mongoose = require('mongoose');
 var router = express.Router();
 
 /*var toDoItems = [
@@ -19,18 +21,16 @@ function User(name, email) {
 }
 
 var users = [
-    new User('tj', 'tj@vision-media.ca'),
-    new User('ciaran', 'ciaranj@gmail.com'),
-    new User('aaron', 'aaron.heckmann+github@gmail.com')
+    new User('Vittal Kamkar', 'vittal.kamkar2@mindtree.com'),
+    new User('Jitendra Daswani', 'Jitendra.Daswani@mindtree.com'),
+    new User('Himangshu Das', 'Himangshu.Das@mindtree.com')
 ];
 
 router.get('/', function (req, res) {
     res.render('index', { users: users });
 });
 
-router.get('*', function (req, res) {
-    res.send(405, 'Method Not Allowwd');
-});
+
 
 router.post('/add', function (req, resp) {
 
@@ -46,6 +46,25 @@ router.post('/add', function (req, resp) {
 
 });
 
+//@@@@@CONNECTION TO MONOGO DB
+mongoose.model('users', { name: String });
+//console.log('ENVIRONMENT', app.get('env'));
+if ('development' == app.get('env')) {
+
+    console.log('I am in developmet')
+    //app.use(express.errorHandler());
+    mongoose.connect('mongodb://127.0.0.1:27017/sample');
+}
+router.get('/users', function (req,res) {
+    //resp.send('Mongoose Database Connection here'); 
+    mongoose.model('users').find(function(err,users){    
+        res.send(users)
+    });
 
 
+    });
+
+router.get('*', function (req, res) {
+    res.status(405).send(   'Method Not Allowed');
+});
 module.exports = router;
