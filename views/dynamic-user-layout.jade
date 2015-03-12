@@ -1,0 +1,11 @@
+﻿include header
+include page-header
+div.container
+ div.alert.alert-info
+  -var msg ="Dynami Users"
+  p #{msg} 
+ #users
+    for user in results
+      include dynamic-users
+
+include footer

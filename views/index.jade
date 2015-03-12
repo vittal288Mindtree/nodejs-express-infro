@@ -1,11 +1,10 @@
-﻿
-extends layout
-
+﻿extends layout
 block content
   div.container
    div.alert.alert-info
     p welcome to ExpressJS POC with Jade templating
-   h1 Users
+   h3 Static Users
    #users
     for user in users
-      include user
+      include user  
+     
