@@ -1,0 +1,30 @@
+CONTACT Details:
+jdiamond@develop.com 
+URL https://www.youtube.com/watch?v=QseHOX-5nJQ	
+{I have watched his video on express nodeJS}
+
+Building Package.JSON file using--> bower init command
+
+GIT HUB PUSH and PULL commands
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+
+URL https://github.com/vittal288Mindtree/nodejs-express-infro.git
+
+1)Initialize the local directory as a Git repository.
+git init
+2)Add the files in your new local repository. This stages them for the first commit.
+git add app.js bower_components and etc
+3)Commit the files that you've staged in your local repository.
+git commit -m 'First commit'
+4)Add repository locally
+git remote add origin remote GitHub_repository_URL
+5)Verifies the new remote URL
+git remote -v
+6)Push the changes in your local repository to GitHub.
+Pull the repository structure from Git hub before pushing first time using 
+6.a)git pull origin master
+then push the code to GitHub Repository using 
+6.b)git push origin master
+
+then you will get successful message 

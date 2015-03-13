@@ -1,0 +1,51 @@
+﻿Please raise a Giene ticket to get ssh access to the following AWS EC2 instance – 
+IP address: 54.183.7.198
+User ID; ec2-user
+
+https://github.com/VisionMediaManagement/conduco.git
+
+Application URL : http://54.175.217.199:3000/ 
+Username: piya
+Password: visionmm
+
+
+@@@@@VPN@@@@@
+username:himangshu
+pwd:visionmm
+@@@@@JIRA@@@@
+url:http://10.1.3.3:8080/secure/Dashboard.jspa
+username:himangshu
+pwd:visionmm
+
+Use Case documents are available in ProjectSpace : https://projects.mindtree.com/docman/index.php?module=browse&view_parent=1266314&sortField=&sortDir=
+You might not have access now for the projectspace and hence attaching one of the Use case doc
+
+@@@@@@@@@@@JS2COFFEE@@@@@
+folder_path>js2coffee sample.js
+//displays coffee file of respective js file
+
+@@@@@@@ DEBUGGING Express framework with node-inspector for JS and COffeeScript
+#1 Install the node-inspector component globally using npm i -g node-inspector
+#2 Run the following command in command prompt
+C:\Users\m1020535>node-inspector
+Node Inspector v0.9.1
+Visit http://127.0.0.1:8080/debug?port=5858 to start debugging.
+#3 Open the above link(http://127.0.0.1:8080/debug?port=5858 ) in browser and shows the blank developer console window
+#4 Then move to your project directory in another command promot window and hit the following command OR run your application using command 
+D:\CODE\PROJECTS\Vision Media\POC\Express_Web_Framework>node --debug app
+debugger listening on port 5858
+NODEJS Server is listening to 8000
+#5 Refresh the URL(http://127.0.0.1:8080/debug?port=5858) from browser and then it loads all your code in developer console window
+#6 Insert the break point wherever you needed and debug the code as your wish
+happy debugging NodeJS Express application using node-inspector 
+#7 if you want start the debugging from the start of NODEJS code please use following coomand 
+node --debug-brk app.js
+-->debugger tool will stop being execute from your breakpoint
+
+#8 Debug the coffeeScript if the application is built on NodeJS Express CoffeeScript using following command
+D:\CODE\PROJECTS\Vision Media\POC\Express_Web_Framework>coffee --nodejs --debug app.coffee
+debugger listening on port 5858
+COFFEE SCRIRT NODEJS Server is listening to 9000
+
+
+

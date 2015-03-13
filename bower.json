@@ -1,10 +1,7 @@
 {
   "name": "Express_Web_Framework",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/vittal288Mindtree/nodejs-express-infro",
-  "moduleType": [
-    "node"
-  ],
   "keywords": [
     "Sample",
     "ExpressJS",
@@ -13,12 +10,17 @@
   "authors": [
     "Vittal Kamkar"
   ],
-  "license": "MIT",
+  "license": "sample POC",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "description": "Sample POC on Express Framework for NODEJS"
 }

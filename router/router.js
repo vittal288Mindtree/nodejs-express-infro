@@ -77,20 +77,16 @@ router.get('/users', function (req,res) {
          });*/
 
 
-        //feetch records from MONGODB
+        //feetch records from MONGODB        
         if (err) throw err;
         var collection = db.collection('user_records');
         collection.find().toArray(function (err, results) {
-            console.dir(results);
+            //console.dir(results);
             //res.send(results);
             res.render('dynamic-user-layout', { results: results });
             db.close();
         });
-    });
-
-   
-    
-
+    });       
 });
 
 router.get('*', function (req, res) {
